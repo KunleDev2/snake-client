@@ -1,5 +1,6 @@
 let connection;
 
+// function to setup input
 const setupInput = function (conn) {
   connection = conn;
 
@@ -8,8 +9,9 @@ const setupInput = function (conn) {
   stdin.setEncoding("utf8");
   stdin.resume();
 
+  // function to handle user input
   const handleUserInput = function (data) {
-    // your code here
+
     if (data === "\u0003") {
       process.exit();
     }
