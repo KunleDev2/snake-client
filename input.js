@@ -29,6 +29,18 @@ const setupInput = function (conn) {
     if (data.trim().toLowerCase() === "d") {
       connection.write("Move: right");
     }
+
+    if (data.trim().toLowerCase() === "m") {
+      conn.write("Say: Hello");
+    }
+
+    if (data.trim().toLowerCase() === "p") {
+      conn.write("Say: Awesome");
+    }
+
+    if (data.trim().toLowerCase() === "i") {
+      conn.write("Say: Good game");
+    }
   };
 
   stdin.on("data", handleUserInput);
