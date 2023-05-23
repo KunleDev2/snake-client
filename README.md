@@ -8,11 +8,13 @@ Before you can run this client, you will need to be running the server side whic
 
 ## Final Product
 
-!["screenshot description"](#)
-!["screenshot description"](#)
+!["screenshot to show final product"](./docs/Image1.PNG)
+!["screenshot to show final product"](./docs/image2.PNG)
 
 
 ## Getting Started
 
-- Follow steps inside the snek server repo to run the server side
+- Follow steps inside the snek server repo to run the server side.
 - Run the development snake client using the `node play.js` command.
+- Use the keys `w`, `s`, `a`, `d` to `Move up`, `Move down`, `Move left` and `Move right` respectively.
+- Use the keys `m`, `p`, `i` to `Say: Hello`, `Say: Awesome` and `Say: Good game` respectively.

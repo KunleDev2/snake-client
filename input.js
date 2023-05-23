@@ -1,3 +1,5 @@
+const { GET_CONTROLS, GET_RANDOM_CONTROLS } = require("./constants");
+
 let connection;
 
 // function to setup input
@@ -17,31 +19,31 @@ const setupInput = function (conn) {
     }
 
     if (data.trim().toLowerCase() === "w") {
-      connection.write("Move: up");
+      connection.write(GET_CONTROLS.w);
     }
 
     if (data.trim().toLowerCase() === "a") {
-      connection.write("Move: left");
+      connection.write(GET_CONTROLS.a);
     }
 
     if (data.trim().toLowerCase() === "s") {
-      connection.write("Move: down");
+      connection.write(GET_CONTROLS.s);
     }
 
     if (data.trim().toLowerCase() === "d") {
-      connection.write("Move: right");
+      connection.write(GET_CONTROLS.d);
     }
 
     if (data.trim().toLowerCase() === "m") {
-      conn.write("Say: Hello");
+      conn.write(GET_RANDOM_CONTROLS.m);
     }
 
     if (data.trim().toLowerCase() === "p") {
-      conn.write("Say: Awesome");
+      conn.write(GET_RANDOM_CONTROLS.p);
     }
 
     if (data.trim().toLowerCase() === "i") {
-      conn.write("Say: Good game");
+      conn.write(GET_RANDOM_CONTROLS.i);
     }
   };
 
